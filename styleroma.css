@@ -1,0 +1,138 @@
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'Mapolice-BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+    url('polices/ballpark.woff') format('woff'),
+    url('polices/ballpark.ttf') format('truetype'),
+    url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mapolice-Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+    url('polices/dayrom.woff') format('woff'),
+    url('polices/dayrom.ttf') format('truetype'),
+    url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2 {
+    font-family: 'Mapolice-Dayrom';
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+#bloc_page {
+    width: 900px;
+    margin: auto;
+}
+
+body {
+    background-image: url(images/fond_jaune.png);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 18px;
+}
+
+ol {
+    font-style: oblique;
+    font-size: 18px;
+
+
+}
+
+nav a {
+    color: black;
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: underline green;
+}
+
+#img360 {
+    margin-top: 25px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.position_section {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+#bloc1 {
+    background-color: green;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+#bloc2 {
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#bloc3 {
+    background-color: red;
+    text-align: center;
+    font-size: 25px;
+}
+
+#BLOC_CONTENEUR {
+    display: flex;
+
+}
+
+#BLOC_CONTENEUR > div {
+    width: 33%;
+    height: 70px;
+    padding: 10px;
+}
+
+p {}
