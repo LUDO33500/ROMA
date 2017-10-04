@@ -22,24 +22,18 @@
     font-style: normal;
 }
 
-h1,
-h2 {
-    font-family: 'Mapolice-Dayrom';
-    font-style: italic;
-    font-weight: bold;
-
-}
-
 #bloc_page {
     width: 900px;
     margin: auto;
 }
 
 body {
-    background-color: #F5E1C1;
+    background-color: #85E68C;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
+
+
 
 header {
     display: flex;
@@ -61,6 +55,14 @@ header {
 
 }
 
+h1,
+h2 {
+    font-family: 'Mapolice-Dayrom';
+    font-style: italic;
+    font-weight: bold;
+
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -77,14 +79,14 @@ ol {
 
 nav a:hover {
     color: #E87E3C;
-    background-color: #F7998B;
+    background-color: white;
 }
 
 nav a {
     color: black;
     font-size: 1.3em;
     padding-bottom: 3px;
-    text-decoration: underline green;
+    text-decoration: underline red;
 }
 
 
@@ -102,8 +104,8 @@ section {
 }
 
 
-#bloc1 {
-    background-color: green;
+.bloc {
+
     text-align: center;
     font-weight: bold;
     font-size: 60px;
@@ -114,42 +116,6 @@ section {
 
 
 }
-
-
-#bloc2 {
-    background-color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    width: 30%;
-    height: 200px;
-    margin: auto;
-    border-radius: 10px;
-}
-
-#bloc3 {
-    background-color: red;
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    width: 30%;
-    height: 200px;
-    margin: auto;
-    border-radius: 10px;
-}
-
-#BLOC_CONTENEUR {
-    display: flex;
-    height: 200px;
-    justify-content: space-between;
-    border-style: solid;
-    border-radius: 15px;
-    background-color: #E3756F;
-
-
-
-}
-
 
 
 .arrondie-img {
@@ -162,6 +128,8 @@ section {
 .structure-bloc {
     border-style: solid;
     border-radius: 10px;
+    margin: 2px 5px 2em 0;
+    padding: 5px 10px;
 }
 
 h4 {
@@ -180,13 +148,13 @@ h3 {
 
 }
 
-#BellaRome {
+#logo_restaurant {
     width: 150%;
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
-#nous2 {
+#together {
     width: 75%;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -198,4 +166,27 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+#bloc_container {
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: #F7ECBC;
+
+}
+
+.bloc_green {
+    background-color: green;
+}
+
+.bloc_white {
+    background-color: white;
+}
+
+.bloc_red {
+    background-color: red;
 }
