@@ -28,7 +28,7 @@
 }
 
 body {
-    background-color: #85E68C;
+    background-image: radial-gradient(blue, red, green);
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
@@ -55,12 +55,19 @@ header {
 
 }
 
-h1,
+h1 {
+
+    font-family: 'Mapolice-BallparkWeiner';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+}
+
 h2 {
     font-family: 'Mapolice-Dayrom';
     font-style: italic;
     font-weight: bold;
-
+    font-size: 30px;
 }
 
 nav ul {
@@ -108,8 +115,7 @@ section {
 
 .arrondie-img {
     border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+
 }
 
 
@@ -123,12 +129,17 @@ section {
 h4 {
     font-size: 20px;
     font-style: oblique;
+    font-size: 20px;
+    font-style: oblique;
+    font-size: 20px;
+    font-style: oblique;
 }
 
 h3 {
     font-size: 25px;
-    font-style: bold;
+    font-weight: bold;
 }
+
 
 .struct {
     display: flex;
@@ -152,28 +163,26 @@ h3 {
 .struct_dessous {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 
-#bloc_container {
+footer {
     display: flex;
-    height: 200px;
+    flex: 1;
     justify-content: space-between;
     border-style: solid;
     border-radius: 15px;
-    background-color: #F7ECBC;
+
 
 }
 
-#bloc_container div {
+footer div {
 
     text-align: center;
     font-weight: bold;
     font-size: 60px;
-    width: 30%;
-    height: 200px;
+    flex: 1;
     margin: auto;
     border-radius: 10px;
 
@@ -190,4 +199,43 @@ h3 {
 
 .bloc_red {
     background-color: red;
+}
+
+.premier {
+    flex: 1;
+}
+
+.second {
+    flex: 1;
+    text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+    #bloc_page {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    #img360 {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    nav ul {
+
+        flex-direction: column;
+        text-align: right;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .structure-bloc {
+        border-style: solid;
+        border-radius: 7px;
+        margin: 1px 1px 0.7em 0;
+        padding: 1px 3px;
+        font-size: 1em;
+    }
 }
